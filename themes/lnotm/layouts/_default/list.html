@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="main archive-main">
+  <header class="archive-header">
+    <h1 class="archive-title">{{ .Title | default "归档" }}</h1>
+    <p class="archive-count">共 {{ len .Pages }} 篇文章</p>
+  </header>
+  
+  <div class="archive-list">
+    {{ range .Pages.GroupByDate "2006" }}
+    <div class="archive-year">
+      <h2 class="archive-year-title">{{ .Key }}</h2>
+      {{ range .Pages }}
+      <article class="archive-item">
+        <time class="archive-time">{{ .Date.Format "01-02" }}</time>
+        <a href="{{ .Permalink }}" class="archive-link">{{ .Title }}</a>
+        {{ with .Params.tags }}
+        <span class="archive-tag">{{ index . 0 }}</span>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

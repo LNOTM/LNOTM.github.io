@@ -1,0 +1,109 @@
+baseURL = 'https://lnotm.github.io/'
+languageCode = 'zh-cn'
+title = '李的博客 | JIA Blog'
+theme = 'lnotm'
+
+# 分页
+paginate = 6
+paginatePath = 'page'
+
+# 文章摘要长度
+summaryLength = 120
+
+# 开启 Emoji 渲染
+enableEmoji = true
+
+# 开启 Git 信息（用于显示最后更新时间）
+enableGitInfo = false
+
+# URL 规则
+[permalinks]
+  posts = '/posts/:year/:month/:slug/'
+
+# 菜单
+[menu]
+  [[menu.main]]
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = '归档'
+    url = '/posts/'
+    weight = 2
+  [[menu.main]]
+    name = '标签'
+    url = '/tags/'
+    weight = 3
+  [[menu.main]]
+    name = '关于'
+    url = '/about/'
+    weight = 4
+
+# 文章参数
+[frontmatter]
+  lastmod = ['lastmod', ':git', 'date']
+
+# 输出格式
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  section = ['HTML', 'RSS']
+
+# 分类法
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+# 站点参数
+[params]
+  # 作者信息
+  author = 'Chen'
+  authorBio = '要做一个有深度的程序员'
+  authorPosition = 'Senior Engineer @ Tech Company'
+  authorLocation = '上海'
+  
+  # 社交链接
+  github = 'LNOTM'
+  email = 'your@email.com'
+  
+  # Hero 区域
+  heroTitle = 'CHEN BLOG'
+  heroSubtitle = '「代码与思考的交汇点」'
+  
+  # 页脚
+  since = 2026
+  license = 'CC BY-NC-SA 4.0'
+  
+  # SEO
+  description = '李的技术博客，记录代码与思考'
+  keywords = ['博客', '技术', '前端', '架构', '程序员']
+  
+  # 功能开关
+  enableSearch = true
+  enableReadingTime = true
+  enableBackToTop = true
+  enableDarkMode = true
+
+# Markdown 渲染
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = 'github'
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+# 隐私配置（GDPR）
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+
+# 构建配置
+[build]
+  writeStats = true

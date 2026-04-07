@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main class="main tags-main">
+  <header class="tags-header">
+    <h1 class="tags-title">标签</h1>
+  </header>
+  
+  <div class="tags-cloud">
+    {{ range .Site.Taxonomies.tags }}
+    <a href="{{ .Page.Permalink }}" class="tag-item" style="font-size: {{ add 1 (mul 0.5 (math.Log (add 1 .Count))) }}rem;">
+      {{ .Page.Title }} <span class="tag-count">({{ .Count }})</span>
+    </a>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

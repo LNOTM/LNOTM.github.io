@@ -1,0 +1,70 @@
+{{ define "main" }}
+<!-- Hero Banner -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">{{ .Site.Params.heroTitle | default "MY BLOG" }}</h1>
+    <p class="hero-subtitle">{{ .Site.Params.heroSubtitle | default "「代码与思考」" }}</p>
+  </div>
+  <div class="hero-scroll">Scroll Down</div>
+</section>
+
+<!-- Main Content -->
+<main class="main">
+  <!-- Article List -->
+  <div class="articles">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+    {{ range $paginator.Pages }}
+    <article class="article-item fade-in">
+      <div class="article-meta">
+        <span>{{ .Date.Format "Jan 02, 2006" }}</span>
+        <span>·</span>
+        {{ with .Params.tags }}
+        <span>{{ index . 0 }}</span>
+        {{ end }}
+      </div>
+      <h2 class="article-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h2>
+      {{ with .Params.subtitle }}
+      <p class="article-title-en">{{ . }}</p>
+      {{ end }}
+      <p class="article-excerpt">{{ .Summary | plainify | truncate 200 }}</p>
+      <div class="article-footer">
+        <span class="article-author">Posted by {{ $.Site.Params.author }} on {{ .Date.Format "January 02, 2006" }}</span>
+        <a href="{{ .Permalink }}" class="article-read-more">
+          Read More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </article>
+    {{ end }}
+    
+    <!-- Pagination -->
+    {{ if gt $paginator.TotalPages 1 }}
+    <div class="pagination">
+      {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}">←</a>
+      {{ end }}
+      {{ range $paginator.Pagers }}
+      {{ if eq . $paginator }}
+      <a href="{{ .URL }}" class="current">{{ .PageNumber }}</a>
+      {{ else }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ end }}
+      {{ end }}
+      {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">→</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    {{ partial "sidebar.html" . }}
+  </aside>
+</main>
+{{ end }}
