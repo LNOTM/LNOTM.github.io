@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>李的博客 | JIA Blog</title>
+    <link>https://lnotm.github.io/</link>
+    <description>Recent content on 李的博客 | JIA Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lnotm.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技术人的职业护城河</title>
+      <link>https://lnotm.github.io/posts/2026/03/%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%9A%84%E8%81%8C%E4%B8%9A%E6%8A%A4%E5%9F%8E%E6%B2%B3/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://lnotm.github.io/posts/2026/03/%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%9A%84%E8%81%8C%E4%B8%9A%E6%8A%A4%E5%9F%8E%E6%B2%B3/</guid>
+      <description>&lt;p&gt;在快速变化的技术行业，如何建立自己的核心竞争力？是深耕某一领域，还是保持 T 型发展？分享我对技术人职业规划的思考和实践。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>React Server Components 实践指南</title>
+      <link>https://lnotm.github.io/posts/2026/03/react-server-components-%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://lnotm.github.io/posts/2026/03/react-server-components-%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;p&gt;RSC 正在改变我们构建 React 应用的方式。本文从零开始介绍 RSC 的核心概念、使用场景和最佳实践，帮助你在实际项目中落地这项技术。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>三十岁，重新理解「学习」</title>
+      <link>https://lnotm.github.io/posts/2026/02/%E4%B8%89%E5%8D%81%E5%B2%81%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://lnotm.github.io/posts/2026/02/%E4%B8%89%E5%8D%81%E5%B2%81%E9%87%8D%E6%96%B0%E7%90%86%E8%A7%A3%E5%AD%A6%E4%B9%A0/</guid>
+      <description>&lt;p&gt;年少时以为学习就是记住更多知识，后来发现真正的学习是建立思维模型。三十岁这年，我对「如何学习」有了新的理解。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

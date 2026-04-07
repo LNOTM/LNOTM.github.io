@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on 李的博客 | JIA Blog</title>
+    <link>https://lnotm.github.io/tags/react/</link>
+    <description>Recent content in React on 李的博客 | JIA Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lnotm.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Server Components 实践指南</title>
+      <link>https://lnotm.github.io/posts/2026/03/react-server-components-%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://lnotm.github.io/posts/2026/03/react-server-components-%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;p&gt;RSC 正在改变我们构建 React 应用的方式。本文从零开始介绍 RSC 的核心概念、使用场景和最佳实践，帮助你在实际项目中落地这项技术。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
